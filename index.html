@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Poker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Poker Helper</h1>
+        <h2>For each card, enter the card name/number (A,K,Q,J,9,8,7,6,5,4,3,2,1) <br> followed by the first letter of the suit (H,D,C,S)</h2>
+        <p> Heart: "H", 
+            Diamond: "D", 
+            Club: "C", 
+            Spade: "S"
+        </p>
+        <label for="card1">Card 1:</label>
+        <input type="text" id="card1" placeholder="e.g.: AH for Ace of Hearts">
+        <br>
+        <label for="card2">Card 2:</label>
+        <input type="text" id="card2" placeholder="e.g.: 1S for 1 of Spades">
+        <br>
+        <button onclick="calculateProbability()">Calculate</button>
+        
+      </div>
+      <div class="container2">
+        <h2 id="result"> Play or Fold: </h2>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
