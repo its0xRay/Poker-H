@@ -19,9 +19,15 @@
         <label for="card2">Card 2:</label>
         <input type="text" id="card2" placeholder="e.g.: 1S for 1 of Spades">
         <br>
-        <button onclick="calculateProbability()">Calculate</button>
-        
+        <button onclick="calculateProbability()">Calculate</button>  
       </div>
+
+      <div id="user-hand">
+        <h2>Your Hand</h2>
+        <div id="user-card1" class="card"></div>
+        <div id="user-card2" class="card"></div>
+      </div>
+    
       <div class="container2">
         <h2 id="result"> Play or Fold: </h2>
       </div>

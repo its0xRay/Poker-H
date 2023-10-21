@@ -1,7 +1,7 @@
 function calculateProbability() {
     const card1 = document.getElementById('card1').value.toUpperCase().trim(); // Get the values entered in the card input fields, convert them to uppercase
     const card2 = document.getElementById('card2').value.toUpperCase().trim();
-    
+   
     const highCards = ['A', 'K', 'Q', 'J', '10'];
     const lowCards = ['2', '3', '4', '5', '6', '7', '8', '9'];
   
@@ -15,5 +15,29 @@ function calculateProbability() {
     } else {
       document.getElementById('result').innerHTML = 'Mixed hand. Play cautiously.';
     }
+
+    const userCard1 = document.getElementById("user-card1");
+    const userCard2 = document.getElementById("user-card2");
+
+    userCard1.innerHTML = formatCard(card1);
+    userCard2.innerHTML = formatCard(card2);
+
+    function formatCard(card) {
+      if (!card) return "";
+      const rank = card.substring(0, card.length - 1);
+      const suit = card.slice(-1);
+      const suits = {
+          "s": "♠",
+          "d": "♦",
+          "h": "♥",
+          "c": "♣"
+      };
+      if (suits[suit]) {
+        return rank + suits[suit];
+    } else {
+        return card;  
   }
-  
+
+}
+
+}
