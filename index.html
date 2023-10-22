@@ -9,27 +9,27 @@
 <body>
     <div class="container">
         <h1>Poker Helper</h1>
-        <p>For each card, <br>enter the card name/number(Ace: "A", King: "K", Queen: "Q", Jack: "J", 9, 8, 7, 6, 5, 4, 3, 2, 1) 
-          <br> followed by the first letter of the suit (Heart: "H", Diamond: "D", Club: "C", Spade: "S")
+        <p>Enter the card name/number(Ace: "A", King: "K", Queen: "Q", Jack: "J", 9, 8, 7, 6, 5, 4, 3, 2, 1) 
+          <br> Followed by the first letter of the suit (Heart: "H", Diamond: "D", Club: "C", Spade: "S")
         </p>
         <h3>Starting Hands</h3>
         <label for="card1">Card 1:</label>
-        <input type="text" id="card1" placeholder="e.g.: AH for Ace of Hearts">
+        <input type="text" id="card1" placeholder="AH for Ace of Heart" maxlength="2">
         <br>
         <label for="card2">Card 2:</label>
-        <input type="text" id="card2" placeholder="e.g. 5S for 5 of Spades">
+        <input type="text" id="card2" placeholder="9C for 9 of Club" maxlength="2">
         <br>
         <button onclick="calculateProbability()">Calculate</button>  
       </div>
 
       <div class="container1">
-        <h2>Your Hand: </h2>
+        <h2>Your Hand:</h2>
         <div id="user-card1" class="card"></div>
         <div id="user-card2" class="card"></div>
       </div>
     
       <div class="container2">
-        <h2 id="result">Result? Play or Fold: </h2>
+        <h2 id="result"> Play or Fold: </h2>
       </div>
       <script src="index.js"></script>
 </body>

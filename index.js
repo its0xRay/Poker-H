@@ -23,7 +23,7 @@ function calculateProbability() {
       document.getElementById('result').innerHTML = 'Probability of winning is low. May consider folding.';
     } 
     else {
-      document.getElementById('result').innerHTML = 'Mixed hand. Play cautiously.';
+      document.getElementById('result').innerHTML = 'Mixed hand. Play cautiously'; 
     }
 
     const userCard1 = document.getElementById("user-card1");
