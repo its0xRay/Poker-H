@@ -1,3 +1,11 @@
+function formatCard(card) {
+  const cardRank = card.slice(0, - 1);
+  const cardSuit = card.slice(-1);
+  const suits = {"S": "♠", "D": "♦", "H": "♥", "C": "♣"};
+// can use . or bracket notation to access the properties of object
+return cardRank + suits[cardSuit];
+}
+
 function calculateProbability() {
     const card1 = document.getElementById('card1').value.toUpperCase().trim(); // Get the values entered in the card input fields, convert them to uppercase
     const card2 = document.getElementById('card2').value.toUpperCase().trim();
@@ -9,10 +17,12 @@ function calculateProbability() {
     const card2Rank = card2.substring(0, card2.length - 1);
   
     if (highCards.includes(card1Rank) && highCards.includes(card2Rank)) {
-      document.getElementById('result').innerHTML = 'Probability of winning is high. Consider playing.';
-    } else if (lowCards.includes(card1Rank) && lowCards.includes(card2Rank)) {
-      document.getElementById('result').innerHTML = 'Probability of winning is low. Consider folding.';
-    } else {
+      document.getElementById('result').innerHTML = 'Probability of winning is high. May consider playing.';
+    } 
+    else if (lowCards.includes(card1Rank) && lowCards.includes(card2Rank)) {
+      document.getElementById('result').innerHTML = 'Probability of winning is low. May consider folding.';
+    } 
+    else {
       document.getElementById('result').innerHTML = 'Mixed hand. Play cautiously.';
     }
 
@@ -21,23 +31,4 @@ function calculateProbability() {
 
     userCard1.innerHTML = formatCard(card1);
     userCard2.innerHTML = formatCard(card2);
-
-    function formatCard(card) {
-      if (!card) return "";
-      const rank = card.substring(0, card.length - 1);
-      const suit = card.slice(-1);
-      const suits = {
-          "s": "♠",
-          "d": "♦",
-          "h": "♥",
-          "c": "♣"
-      };
-      if (suits[suit]) {
-        return rank + suits[suit];
-    } else {
-        return card;  
   }
-
-}
-
-}
