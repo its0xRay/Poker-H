@@ -1,4 +1,12 @@
-# Poker H Enhancements
+# Poker H Enhancements To Do
+
+## Game Logic Enhacements
+More factors which affect the probability to be added.
+Post Flop Cards
+Turn & River Cards
+Seat Position of the player
+Other player's bets
+Emotional State of the player
 
 ## To be added UI
 Enable button when both the fields are typed
@@ -10,12 +18,3 @@ Better UI
 DB 
 Cache
 Clear selection
-
-
-## Game Logic Enhacements
-More factors which affect the probability to be added.
-Post Flop Cards
-Turn & River Cards
-Seat Position of the player
-Other player's bets
-Emotional State of the player

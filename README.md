@@ -1,4 +1,6 @@
 # Poker-H
+This project aims to help beginners understand the probabilities based on multiple factors. 
+Please note usage of such tools during the game may be prohibited. 
 
 ## Basics
 
